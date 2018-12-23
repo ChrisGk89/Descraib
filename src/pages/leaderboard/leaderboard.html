@@ -1,0 +1,79 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Leaderboard</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-content padding class="bg">
+    <!-- <ion-card class="card-recent">
+    <ion-card-content text-center>
+      <ion-card-title>
+        Recent Activity
+      </ion-card-title>
+      <div class="discription">{{recent_activity['activitytype']}}: {{recent_activity['distance']}}KM</div>
+      <div class="discription">FootPrint Challenges: {{number_challenges}}</div>
+      <div class="discription">Your Total Score: {{totalScore}}</div>
+      </ion-card-content>
+    </ion-card> -->
+
+    <ion-card class="card-five">
+      <ion-card-title text-center>Top five Users</ion-card-title>
+      <ion-grid>
+        <ion-row class="header_rwo">
+          <ion-col>Username</ion-col>
+          <ion-col>Score</ion-col>
+          <ion-col>Position</ion-col>
+        </ion-row>
+        <ion-row class="header_players">
+         <!-- <ion-row *ngFor="let i of total_parti"> -->
+          <ion-col>
+            Chris
+            <!-- {{ perticipants[i]['_id'] }} -->
+          </ion-col>
+          <ion-col>
+            150
+            <!-- {{ perticipants[i]['total'] }} -->
+          </ion-col>
+          <ion-col>
+            1
+            <!-- {{ i+1 }} -->
+          </ion-col>
+        </ion-row>
+
+        <ion-row class="header_players">
+          <ion-col>John</ion-col>
+          <ion-col>120</ion-col>
+          <ion-col>2</ion-col>
+        </ion-row>
+
+        <ion-row class="header_players">
+          <ion-col>Jim</ion-col>
+          <ion-col>100</ion-col>
+          <ion-col>3</ion-col>
+        </ion-row>
+
+        <ion-row class="header_players">
+          <ion-col>Maria</ion-col>
+          <ion-col>80</ion-col>
+          <ion-col>4</ion-col>
+        </ion-row>
+
+        <ion-row class="header_players">
+          <ion-col>Cherry</ion-col>
+          <ion-col>50</ion-col>
+          <ion-col>5</ion-col>
+        </ion-row>
+
+
+      </ion-grid>
+    </ion-card>
+
+  </ion-content>
+
+</ion-content>

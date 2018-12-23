@@ -1,0 +1,7 @@
+{
+  "name": "Descraib",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Welcome to Descra(i)b</ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="content-intro">
+
+  <ion-card-content>
+
+    <ion-col col-1 no-padding class="padding-top-20">
+    </ion-col>
+
+    <ion-col col-3 text-center>
+          <div class="center" style="padding-top: 80px">
+          <button class="play" ion-button round large color="default" (click)="cAtegoriesPage()">Play</button>
+          </div>
+
+      <div class="center" style="padding-top: 50px">
+  <button class="leaderboard" ion-button round large color="light" (click)="lEaderboardPage()">LeaderBoard</button>
+      </div>
+
+      <div class="center" style="padding-top: 50px">
+  <button class="info" ion-button round large color="secondary" (click)="openWithSystemBrowser('https://www.chrisgkalfas.com')">Developer Info</button>
+      </div>
+    </ion-col>
+
+
+  </ion-card-content>
+
+
+</ion-content>

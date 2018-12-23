@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Choose Level</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+
+  <ion-card class="cards">
+    <ion-card-content class="card-content">
+      <ion-card-title style="text-align: center">
+        <b>Level One</b>
+      </ion-card-title>
+      <p style="text-align: center">
+        Choose the correct answer according of what you see in the image to gain points.
+      </p>
+    </ion-card-content>
+    <img class="img" src="assets/imgs/crab.png"/>
+      <ion-col col-3 text-center>
+        <div class="center">
+        <button class="play" ion-button round large color="default" (click)="iMagesPage()">Go to Level 1</button>
+        </div>
+      </ion-col>
+  </ion-card>
+
+
+  <ion-card class="cards">
+    <ion-card-content class="card-content">
+      <ion-card-title style="text-align: center">
+        <b>Level Two</b>
+      </ion-card-title>
+      <p style="text-align: center">
+        Choose the correct answer in the question to gain 2x points.
+      </p>
+    </ion-card-content>
+    <div>
+      <img class="img" src="assets/imgs/crabs.png"/>
+    </div>
+    <ion-col col-3 text-center>
+      <div class="center">
+        <button class="play" ion-button round large color="secondary" (click)="iMages2Page()">Go to Level 2</button>
+      </div>
+    </ion-col>
+  </ion-card>
+
+
+  <ion-card class="cards">
+    <ion-card-content class="card-content">
+      <ion-card-title style="text-align: center">
+        Level Three
+      </ion-card-title>
+      <p style="text-align: center">
+        Follow the instructions taking the correct image to gain 3x points.
+      </p>
+    </ion-card-content>
+    <div>
+      <img class="img" src="assets/imgs/annotate.png"/>
+    </div>
+    <ion-col col-3 text-center>
+      <div class="center">
+        <button class="play" ion-button round large color="danger" (click)="iMages3Page()">Go to Level 3</button>
+      </div>
+    </ion-col>
+  </ion-card>
+
+</ion-content>

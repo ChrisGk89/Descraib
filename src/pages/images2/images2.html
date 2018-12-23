@@ -1,0 +1,496 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Level Two
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="background-color">
+
+  <h1 class="h2">Find the match to gain 2X points!</h1>
+
+  <ion-grid>
+
+
+    <ion-row class="row">
+      <ion-card class="image">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <!--<img src="assets/imgs/cat.png">-->
+            <h1>Can you find the cat?</h1>
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/1.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="dog" [disabled]="disabled1"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/2.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="cat" [disabled]="disabled1"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/3.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="tree" [disabled]="disabled1"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled1" round medium color="{{color1}}" type="submit" (click)="presentAlert()" (click)="handler()">{{text1}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+    <ion-row class="row2">
+      <ion-card class="image2">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/dog.png">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/5.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="desk" [disabled]="disabled2"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/1.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="dog" [disabled]="disabled2"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/7.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="stopsign" [disabled]="disabled2"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled2"  round medium color="{{color2}}" type="submit" (click)="presentAlert()" (click)="handler2()">{{text2}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+    <ion-row class="row3">
+      <ion-card class="image3">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/tree.png">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/3.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="tree" [disabled]="disabled3"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/6.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="guitar" [disabled]="disabled3"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/8.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="bird" [disabled]="disabled3"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled3"  round medium color="{{color3}}" type="submit" (click)="presentAlert()" (click)="handler3()">{{text3}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+
+    <ion-row class="row4">
+      <ion-card class="image4">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/bike.png">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/2.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="cat" [disabled]="disabled4"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/4.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="bicycle" [disabled]="disabled4"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/8.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="bird" [disabled]="disabled4"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled4"  round medium color="{{color4}}" type="submit" (click)="presentAlert()" (click)="handler4()">{{text4}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+
+    <ion-row class="row5">
+      <ion-card class="image5">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/desk.jpg">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/1.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="dog" [disabled]="disabled5"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/7.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="stopsign" [disabled]="disabled5"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/5.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="desk" [disabled]="disabled5"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled5"  round medium color="{{color5}}" type="submit" (click)="presentAlert()" (click)="handler5()">{{text5}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+
+    <ion-row class="row6">
+      <ion-card class="image6">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/guitar.png">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/5.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="desk" [disabled]="disabled6"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/6.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="guitar" [disabled]="disabled6"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/10.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="flowers" [disabled]="disabled6"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled6"  round medium color="{{color6}}" type="submit" (click)="presentAlert()" (click)="handler6()">{{text6}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+
+    <ion-row class="row7">
+      <ion-card class="image7">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/stop.png">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/3.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="tree" [disabled]="disabled7"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/7.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="stopsign" [disabled]="disabled7"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/6.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="guitar" [disabled]="disabled7"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled7"  round medium color="{{color7}}" type="submit" (click)="presentAlert()" (click)="handler7()">{{text7}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+
+    <ion-row class="row8">
+      <ion-card class="image8">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/bird.png">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/1.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="dog" [disabled]="disabled8"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/8.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="bird" [disabled]="disabled8"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/3.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="tree" [disabled]="disabled8"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled8"  round medium color="{{color8}}" type="submit" (click)="presentAlert()" (click)="handler8()">{{text8}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+    <ion-row class="row9">
+      <ion-card class="image9">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/yellowroad.png">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/10.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="flowers" [disabled]="disabled9"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/3.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="tree" [disabled]="disabled9"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/9.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="roadsign" [disabled]="disabled9"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled9"  round medium color="{{color9}}" type="submit" (click)="presentAlert()" (click)="handler9()">{{text9}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+    <ion-row class="row10">
+      <ion-card class="image10">
+
+        <ion-col col-12 col-sm text-center>
+
+
+          <ion-card-header>
+            <img src="assets/imgs/flowers.jpg">
+          </ion-card-header>
+        </ion-col>
+
+        <ion-col col-12 col-sm text-center>
+          <ion-card-content>
+            <ion-list radio-group>
+              <ion-list-header>
+                Choose the correct answer
+              </ion-list-header>
+
+              <img src="assets/imgs/3.jpg"/>
+              <ion-item>
+              <ion-label>Choose this</ion-label>
+              <ion-radio value="tree" [disabled]="disabled10"></ion-radio>
+              </ion-item>
+
+
+              <img src="assets/imgs/6.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="guitar" [disabled]="disabled10"></ion-radio>
+              </ion-item>
+
+              <img src="assets/imgs/10.jpg"/>
+              <ion-item>
+                <ion-label>Choose this</ion-label>
+                <ion-radio value="flowers" [disabled]="disabled10"></ion-radio>
+              </ion-item>
+
+              <div class="center" style="padding-bottom: 10px">
+                <button ion-button [disabled]="disabled10" round medium color="{{color10}}" type="submit" (click)="presentAlert()" (click)="handler10()">{{text10}}</button>
+              </div>
+            </ion-list>
+
+          </ion-card-content>
+        </ion-col>
+      </ion-card>
+    </ion-row>
+
+
+
+  </ion-grid>
+
+</ion-content>
