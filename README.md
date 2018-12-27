@@ -1,2 +1,2 @@
 # Descraib
-This is an ionic game that delivers the purpose of the Master Thesis test applcation.
+This is an ionic game that will be used as the Master Thesis test applcation for testing and evaluation.

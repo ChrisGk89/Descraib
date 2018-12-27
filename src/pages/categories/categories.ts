@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import {NavController} from 'ionic-angular';
+import {AlertController, NavController} from 'ionic-angular';
 import {ImagesPage} from "../images/images";
 import {Images2Page} from "../images2/images2";
 import {Images3Page} from "../images3/images3";
+import {LoginPage} from "../login/login";
 
 
 @Component({
@@ -10,7 +11,7 @@ import {Images3Page} from "../images3/images3";
 })
 export class CategoriesPage {
 
-  constructor (public navCtrl: NavController){}
+  constructor (public navCtrl: NavController, private alertCtrl: AlertController){}
 
   iMagesPage(){
     this.navCtrl.push(ImagesPage);
@@ -24,5 +25,17 @@ export class CategoriesPage {
     this.navCtrl.push(Images3Page);
   }
 
+  public logout() {
+
+    this.navCtrl.setRoot(LoginPage);
+  }
+
+  presentAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Your are logged out.',
+      buttons: ['OK'],
+    });
+    alert.present();
+  }
 
 }

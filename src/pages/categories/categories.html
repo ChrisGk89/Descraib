@@ -1,5 +1,10 @@
 <ion-header>
   <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="logout()" (click)="presentAlert()">
+        <a>Logout</a>
+      </button>
+    </ion-buttons>
     <ion-title>Choose Level</ion-title>
   </ion-navbar>
 </ion-header>
@@ -47,7 +52,7 @@
   <ion-card class="cards">
     <ion-card-content class="card-content">
       <ion-card-title style="text-align: center">
-        Level Three
+        <b>Level Three</b>
       </ion-card-title>
       <p style="text-align: center">
         Follow the instructions taking the correct image to gain 3x points.

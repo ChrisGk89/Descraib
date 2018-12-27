@@ -69,7 +69,7 @@ export class ImagesPage {
     let toast = this.toastCtrl.create({
       message: 'HINT: Look closer!',
       duration: 4000,
-      position: 'middle'
+      position: 'middle',
     });
 
     toast.onDidDismiss(() => {
@@ -99,7 +99,7 @@ export class ImagesPage {
     let alert = this.alertCtrl.create({
       title: 'Your answer submitted.',
       subTitle: 'We are working on your response to gather your points.',
-      buttons: ['OK']
+      buttons: ['OK'],
     });
     alert.present();
   }
