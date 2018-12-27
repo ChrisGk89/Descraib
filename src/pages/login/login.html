@@ -1,7 +1,7 @@
 <ion-content class="login-content" padding>
-  <ion-title class="title">
-    Welcome to Descra(i)b <br><br>
-    Login
+  <ion-title>
+    <h3 style="color:#399F8B; font-family: 'Avenir Next'; font-weight: bold; font-size: x-large;">Welcome to Descra(i)b</h3>
+    <h4 style="color:#399F8B">Login</h4>
   </ion-title>
 
   <ion-row class="logo-row">
@@ -11,7 +11,9 @@
     </ion-col>
     <ion-col></ion-col>
   </ion-row>
-  <div class="login-box">
+
+
+  <div class="login-box" style="border-radius: 15px">
     <form (ngSubmit)="login()" #registerForm="ngForm">
       <ion-row>
         <ion-col>

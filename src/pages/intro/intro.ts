@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController, Platform } from 'ionic-angular';
+import {AlertController, NavController, Platform} from 'ionic-angular';
 import { CategoriesPage } from "../categories/categories";
 import { InAppBrowser,InAppBrowserOptions } from "@ionic-native/in-app-browser";
 import { LeaderboardPage } from "../leaderboard/leaderboard";
 import { AuthService } from "../../providers/auth-service/auth-service";
+import {LoginPage} from "../login/login";
 
 @Component({
   templateUrl: 'intro.html',
@@ -31,7 +32,7 @@ export class IntroPage {
     fullscreen : 'yes',//Windows only
   };
 
-  constructor (public platform: Platform, public navCtrl: NavController, private iab: InAppBrowser, private auth: AuthService){
+  constructor (public platform: Platform, public navCtrl: NavController, private iab: InAppBrowser, private auth: AuthService, private alertCtrl: AlertController){
     let info = this.auth.getUserInfo();
     this.username = info['name'];
     this.email = info['email'];
@@ -51,11 +52,17 @@ export class IntroPage {
   }
 
   public logout() {
-    this.auth.logout().subscribe(succ => {
-      this.navCtrl.setRoot('LoginPage')
-    });
+
+      this.navCtrl.setRoot(LoginPage);
   }
 
+  presentAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Your are logged out.',
+      buttons: ['OK'],
+    });
+    alert.present();
+  }
 
 }
 
